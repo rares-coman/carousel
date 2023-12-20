@@ -271,6 +271,10 @@ ul {
   width: 100%;
   height: 100%;
   transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .person-img {
   width: 150px;
@@ -280,6 +284,10 @@ ul {
   object-fit: cover;
   border: 4px solid var(--primary-200);
   box-shadow: var(--shadow-3);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .name {
@@ -318,6 +326,14 @@ ul {
   border-radius: var(--borderRadius);
   cursor: pointer;
   transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-border-radius: var(--borderRadius);
+  -moz-border-radius: var(--borderRadius);
+  -ms-border-radius: var(--borderRadius);
+  -o-border-radius: var(--borderRadius);
 }
 .prev:hover,
 .next:hover {
@@ -342,6 +358,10 @@ ul {
 }
 .next-slide {
   transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
 }
 
 /* ============= Slick Carousel =============== */

@@ -27,19 +27,18 @@ const Carousel = () => {
   const nextHandler = () => {
     setCurrentIndex((current) => {
       let newIndex = current + 1;
-      return newIndex;
+      return checkNumber(newIndex);
     });
   };
 
   useEffect(() => {
-    const sliderId = setInterval(() => {
+    let sliderId = setInterval(() => {
       nextHandler();
     }, 5000);
     return () => {
       clearInterval(sliderId);
     };
   }, [currentIndex]);
-
   return (
     <section className="slider-container">
       {people.map((person, personIndex) => {
@@ -57,7 +56,7 @@ const Carousel = () => {
             <img src={image} alt={name} className="person-img" />
             <h5 className="name">{name}</h5>
             <h4 className="title">{title}</h4>
-            <p className="quote">{quote}</p>
+            <p className="text">{quote}</p>
 
             <FaQuoteRight className="icon" />
           </article>
